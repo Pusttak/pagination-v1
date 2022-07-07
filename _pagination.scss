@@ -1,0 +1,50 @@
+.pagination-wrap {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  gap: 2px;
+  max-width: 50%;
+}
+
+.pagination-btn {
+  color: rgb(19, 19, 19);
+  padding: 8px 12px;
+  min-width: 50px;
+  cursor: pointer;
+  border: none;
+  // background-color: rgb(245, 201, 135);
+  border-radius: 4px;
+  transition: .3s;
+
+  &:hover {
+    background-color: rgb(223, 134, 1);
+    color: aliceblue;
+  }
+
+  &:active {
+    background-color: rgb(192, 115, 0);
+  }
+}
+
+.pagination-btn--active {
+  background-color: rgb(217, 132, 5);
+  color: aliceblue;
+}
+
+.pagination-btn--arrow {
+  min-width: 80px;
+  background-color: rgb(245, 201, 135);
+}
+
+.pagination-btn--dots {
+  display: block;
+  padding: 2px 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
