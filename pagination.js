@@ -1,9 +1,9 @@
-import { Pagination } from './pagination-api'
+import { Pagination } from "./pagination-api";
 
 const allPages = 12;
 const step = 6;
-const galleryEl = document.querySelector('.gallery');
-const searchQuery = 'batman'
+const galleryEl = document.querySelector(".gallery");
+const searchQuery = "batman";
 
 // const BASE_URL = 'https://api.themoviedb.org/3';
 // const API_KEY = '33bcb89e36b34d36b896a35a11214f25';
@@ -14,9 +14,9 @@ const searchQuery = 'batman'
 //     const response = await fetch(url);
 //     const data = await response.json();
 //     return data;
-// } 
+// }
 
-const api = new Pagination('api');
+const api = new Pagination("api");
 
 api.create({
   prelink: galleryEl,
@@ -24,10 +24,12 @@ api.create({
   step: step,
   arrows: true,
   dots: true,
+  currentEvent: getMovies,
+  arrows: true,
+  dots: true,
+  scrollPage: true,
 });
 
-api.addPaginationEvent(getMovies);
-
 function getMovies() {
-  console.log('asdasd')
+  console.log("asdasd");
 }
