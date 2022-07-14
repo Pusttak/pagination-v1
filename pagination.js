@@ -25,8 +25,6 @@ api.create({
   arrows: true,
   dots: true,
   currentEvent: getMovies,
-  arrows: true,
-  dots: true,
   scrollPage: true,
 });
 
