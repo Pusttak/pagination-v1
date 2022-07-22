@@ -1,4 +1,4 @@
-import { Pagination } from './pagination-api'; // 1. Импорт пагинации к себе на страницу где делаете запрос! Файл лежит в папке "js/components".
+import { Pagination } from './pagination-api'; // 1. Импорт пагинации к себе на страницу где делаете запрос!
 const homePaginationEl = document.querySelector('.pagination-wrap'); // 2. Элемент в котором  будет рендерится пагинация.
 const homepagePagination = new Pagination('home'); // 3. Создаем экземпляр с уникальным названием. Аргумент 'home' - уникальное имя, с этим именем будет сохраняться страница в SessionStorage.
 homepagePagination.create({ // 4. Вызываем метод create() у своего экземпляра и передаем в него настройки пагинации.
